@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+    
+</head>
+<body class="body">
+    <header>
+        <img class="logo_alura" src="/img/Frame 6.png" alt="logo de alura">
+    </header>
+
+    <main class="main">
+        <section>
+            <textarea class="text_area" cols="30" rows="10" placeholder="Ingrese aquí el texto"></textarea>
+
+            <div> 
+                <h6 class="nota">Solo letras minúsculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="boton_encriptador" onclick="botonEncriptar()" >Encriptar</button>
+                
+                <button class="boton_desencriptador" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+            
+        <section>
+            <textarea class="mensaje_encriptado" cols="30" rows="10" id="textoACopiar" placeholder="Ningún mensaje fue encontrado. Ingrese el texto que desee encriptar o desencritpar"></textarea>
+
+            <div>
+                <button class="boton_copiar" onclick="botonCopiar()">Copiar</button>
+                <p class="aviso_mensaje_copiado" id="feedbackElement"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Diana Luna Gómez. Agosto 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/app.js" > </script>
+</body>
+
+</html>
